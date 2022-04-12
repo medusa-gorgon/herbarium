@@ -1,0 +1,6 @@
+.svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--dark);
+  fill: var(--dark);
+}

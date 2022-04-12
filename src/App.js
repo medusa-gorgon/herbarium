@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Flower from './components/flower/Flower';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Your Herbarium</h1>
+      <Flower name='Tulip' t='26.5°C' humidity='53.0%' img={process.env.PUBLIC_URL + 'images/tulip.png'} color='pink' />
     </div>
   );
 }
