@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Flowers from './components/flowers/Flowers';
-import Title from './components/Title';
+import Title from './components/general/Title';
 
 const App = () => {
   return (

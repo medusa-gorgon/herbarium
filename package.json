@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "svgstore-cli": "^2.0.1"
+    "gh-pages": "^3.2.3",
+    "z": "^2.0.1"
   }
 }

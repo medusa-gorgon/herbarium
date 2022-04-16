@@ -1,4 +1,4 @@
-import Sprite from '../assets/sprite.svg';
+import Sprite from '../../assets/sprite.svg';
 import styles from './SVG.module.css';
 
 const SVG = ({ id, color }) => {

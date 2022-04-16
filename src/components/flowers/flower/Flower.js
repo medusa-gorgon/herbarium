@@ -1,8 +1,8 @@
 import styles from './Flower.module.css';
-import SVG from '../../SVG';
+import SVG from '../../general/SVG';
 import { useRef } from 'react';
 
-const Flower = ({ id, name, temperature, humidity, img, color, description, isShown, setIsShown }) => {
+const Flower = ({ id, name, temperature, humidity, img, color, description, toggleDesc, isShown }) => {
   const t = Number(temperature).toFixed(1);
   const h = Number(humidity).toFixed(1);
   const desc = useRef(null);
@@ -12,13 +12,7 @@ const Flower = ({ id, name, temperature, humidity, img, color, description, isSh
       <div
         className={styles.main}
         onClick={() => {
-          if (isShown === null) {
-            setIsShown(id);
-          } else if (isShown !== null && isShown !== id) {
-            setIsShown(id);
-          } else if (isShown === id) {
-            setIsShown(null);
-          }
+          toggleDesc(id);
         }}
       >
         <div className={styles.content}>
