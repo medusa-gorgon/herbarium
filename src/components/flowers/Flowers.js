@@ -37,7 +37,7 @@ const Flowers = () => {
           name={flower.name}
           temperature={flower.temperature}
           humidity={flower.humidty}
-          img={flower.img}
+          img={`${process.env.PUBLIC_URL}${flower.img}`}
           color={flower.color}
           description={flower.description}
           isShown={isShown}

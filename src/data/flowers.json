@@ -5,7 +5,7 @@
     "color": "pink",
     "temperature": 25.32,
     "humidty": 33,
-    "img": "images/tulip.png",
+    "img": "/images/tulip.png",
     "description": "Tulips (Tulipa) are a genus of spring-blooming perennial herbaceous bulbiferous geophytes. The flowers are usually large, showy and brightly colored, generally red, pink, yellow, or white."
   },
   {
@@ -14,7 +14,7 @@
     "color": "blue",
     "temperature": 23.6666667,
     "humidty": 32.5,
-    "img": "images/gerbera.png",
+    "img": "/images/gerbera.png",
     "description": "Gerbera is a genus of plants in the Asteraceae (Compositae) family. Gerbera species are tufted, caulescent, perennial herbs, often with woolly crown, up to 80 cm high."
   },
   {
@@ -23,7 +23,7 @@
     "color": "green",
     "temperature": 31.1,
     "humidty": 83,
-    "img": "images/orchid.png",
+    "img": "/images/orchid.png",
     "description": "Orchids is a genus of plants, that are easily distinguished from other plants, as they share some very evident derived characteristics or synapomorphies."
   },
   {
