@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/herbarium/static/css/main.19b97136.css",
+    "main.css": "/herbarium/static/css/main.634a7563.css",
     "main.js": "/herbarium/static/js/main.d2934506.js",
     "static/js/787.d66b550c.chunk.js": "/herbarium/static/js/787.d66b550c.chunk.js",
     "static/media/logo.svg": "/herbarium/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/sprite.svg": "/herbarium/static/media/sprite.31a4d2eaca3d8dc4db385a5f480cb1f7.svg",
     "index.html": "/herbarium/index.html",
-    "main.19b97136.css.map": "/herbarium/static/css/main.19b97136.css.map",
+    "main.634a7563.css.map": "/herbarium/static/css/main.634a7563.css.map",
     "main.d2934506.js.map": "/herbarium/static/js/main.d2934506.js.map",
     "787.d66b550c.chunk.js.map": "/herbarium/static/js/787.d66b550c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19b97136.css",
+    "static/css/main.634a7563.css",
     "static/js/main.d2934506.js"
   ]
 }
