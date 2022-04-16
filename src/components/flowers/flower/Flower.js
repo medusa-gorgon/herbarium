@@ -1,9 +1,12 @@
 import styles from './Flower.module.css';
 import SVG from '../../SVG';
+import { useRef } from 'react';
 
 const Flower = ({ id, name, temperature, humidity, img, color, description, isShown, setIsShown }) => {
   const t = Number(temperature).toFixed(1);
   const h = Number(humidity).toFixed(1);
+  const desc = useRef(null);
+
   return (
     <div className={`${styles.flower} ${color}`}>
       <div
@@ -35,7 +38,13 @@ const Flower = ({ id, name, temperature, humidity, img, color, description, isSh
           <img className={styles.img} src={img} alt={name} />
         </div>
       </div>
-      {isShown === id ? <div className={styles.description}>{description}</div> : ''}
+      <div
+        className={styles.descriptionBlock}
+        ref={desc}
+        style={{ maxHeight: isShown === id ? `${desc.current.scrollHeight}px` : '0px' }}
+      >
+        <div className={styles.description}>{description}</div>
+      </div>
     </div>
   );
 };

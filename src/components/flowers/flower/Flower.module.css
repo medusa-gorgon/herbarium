@@ -7,22 +7,11 @@
 }
 
 .main {
-  height: 136px;
-  max-height: fit-content;
+  min-height: 136px;
   background-color: var(--background);
   display: grid;
   grid-template-columns: 1fr 136px;
   cursor: pointer;
-}
-
-.description {
-  background-color: var(--dark);
-  color: white;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 21.5px 24px;
-  text-align: left;
 }
 
 .content {
@@ -31,7 +20,6 @@
   text-align: left;
   padding: 29px 9px 29px 24px;
   overflow: hidden;
-  max-width: fit-content;
 }
 
 .name {
@@ -43,6 +31,7 @@
   word-break: break-all;
   hyphens: auto;
 }
+
 .indicators {
   display: flex;
 }
@@ -51,20 +40,23 @@
   background-color: var(--transparent);
   color: var(--dark);
   width: 87px;
-  height: 32px;
+  padding: 4px 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4px;
+
   border-radius: 8px;
+}
+.indicator:not(:last-child) {
+  margin-right: 4px;
 }
 
 .text {
-  padding: 2px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
 }
+
 .imgBlock {
   height: 100%;
   overflow: hidden;
@@ -72,4 +64,23 @@
 
 .img {
   width: 100%;
+  aspect-ratio: 1;
+  display: block;
+}
+
+.descriptionBlock {
+  background-color: var(--dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.description {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 21.5px 24px;
+  text-align: left;
+  min-height: 128px;
+  display: flex;
+  align-items: center;
 }
